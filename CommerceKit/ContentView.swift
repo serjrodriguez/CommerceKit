@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let viewModel: ProductsViewModel
+    
+    init() {
+        let configuration = APIConfiguration(environment: .development)
+        let requestBuilder = RequestBuilder()
+        let apiClient = APIClient(
+            requestBuilder: requestBuilder,
+            urlSession: .shared,
+            configuration: configuration
+        )
+        let repository = ProductsRepository(apiClient: apiClient)
+        viewModel = ProductsViewModel(repository: repository)
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            ProductsListView(viewModel: viewModel)
         }
-        .padding()
     }
 }
 
