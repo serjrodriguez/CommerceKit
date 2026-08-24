@@ -30,11 +30,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		70E8627C301183A8005DA689 /* CommerceKit */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CommerceKit;
-			sourceTree = "<group>";
-		};
 		70E8628A301183AA005DA689 /* CommerceKitTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CommerceKitTests;
@@ -43,6 +38,11 @@
 		70E86294301183AA005DA689 /* CommerceKitUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CommerceKitUITests;
+			sourceTree = "<group>";
+		};
+		70E862AF30118417005DA689 /* CommerceKit */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CommerceKit;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,7 +75,7 @@
 		70E86271301183A8005DA689 = {
 			isa = PBXGroup;
 			children = (
-				70E8627C301183A8005DA689 /* CommerceKit */,
+				70E862AF30118417005DA689 /* CommerceKit */,
 				70E8628A301183AA005DA689 /* CommerceKitTests */,
 				70E86294301183AA005DA689 /* CommerceKitUITests */,
 				70E8627B301183A8005DA689 /* Products */,
@@ -108,7 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				70E8627C301183A8005DA689 /* CommerceKit */,
+				70E862AF30118417005DA689 /* CommerceKit */,
 			);
 			name = CommerceKit;
 			packageProductDependencies = (
